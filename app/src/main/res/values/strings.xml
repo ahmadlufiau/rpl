@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Parcel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_title_belanja">Belanja</string>
+    <string name="nav_title_promo">Promo</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Menu 2</item>
+        <item>Menu 3</item>
+    </string-array>
+
+    <string name="nav_title_home">Home</string>
+
+</resources>
