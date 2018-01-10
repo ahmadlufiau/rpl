@@ -7,15 +7,15 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/nav_title_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_status"
             android:icon="@drawable/ic_check_box_black_24dp"
             android:title="Status" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_rp"
             android:icon="@drawable/ic_history_black_24dp"
             android:title="Riwayat Pembayaran" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_pengiriman"
             android:icon="@drawable/ic_menu_send"
             android:title="Pengiriman" />
     </group>
@@ -23,11 +23,11 @@
     <item android:title="Akun">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_profil"
                 android:icon="@drawable/ic_account_box_black_24dp"
                 android:title="Profil" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Keluar" />
         </menu>

@@ -19,9 +19,12 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String TAG_BELANJA = "belanja";
+    private static final String TAG_STATUS = "status";
     private static final String TAG_HOME = "beranda";
-    public static String CURRENT_TAG = TAG_BELANJA;
+    private static final String TAG_RIWAYAT_PEMBAYARAN = "Riwayat Pembayaran";
+    private static final String TAG_PENGIRIMAN = "Pengiriman";
+    private static final String TAG_PROFIL = "Profil";
+    public static String CURRENT_TAG = TAG_STATUS;
     public static int navItemIndex = 0;
 
     private String[] activityTitles;
@@ -137,6 +140,18 @@ public class MainActivity extends AppCompatActivity
             case 0:
                 HomeFragment homeFragment = new HomeFragment();
                 return homeFragment;
+            case 1:
+                StatusFragment statusFragment = new StatusFragment();
+                return statusFragment;
+            case 2:
+                RiwayatPembayaranFragment rpFragment = new RiwayatPembayaranFragment();
+                return rpFragment;
+            case 3:
+                PengirimanFragment pengirimanFragment = new PengirimanFragment();
+                return pengirimanFragment;
+            case 4:
+                ProfilFragment profilFragment = new ProfilFragment();
+                return profilFragment;
             default:
                 return new HomeFragment();
         }
@@ -153,9 +168,21 @@ public class MainActivity extends AppCompatActivity
                 navItemIndex = 0;
                 CURRENT_TAG = TAG_HOME;
                 break;
-            case R.id.nav_gallery:
+            case R.id.nav_status:
                 navItemIndex = 1;
-                CURRENT_TAG = TAG_BELANJA;
+                CURRENT_TAG = TAG_STATUS;
+                break;
+            case R.id.nav_rp:
+                navItemIndex = 2;
+                CURRENT_TAG = TAG_RIWAYAT_PEMBAYARAN;
+                break;
+            case R.id.nav_pengiriman:
+                navItemIndex = 3;
+                CURRENT_TAG = TAG_PENGIRIMAN;
+                break;
+            case R.id.nav_profil:
+                navItemIndex = 4;
+                CURRENT_TAG = TAG_PROFIL;
                 break;
             default:
                 navItemIndex = 0;

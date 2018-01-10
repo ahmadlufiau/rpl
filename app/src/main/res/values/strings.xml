@@ -14,8 +14,10 @@
 
     <string-array name="nav_item_activity_titles">
         <item>Home</item>
-        <item>Menu 2</item>
-        <item>Menu 3</item>
+        <item>Status</item>
+        <item>Riwayat Pembayaran</item>
+        <item>Pengiriman</item>
+        <item>Profil</item>
     </string-array>
 
     <string name="nav_title_home">Home</string>
