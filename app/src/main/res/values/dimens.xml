@@ -7,4 +7,5 @@
     <dimen name="normal_margin">8dp</dimen>
     <dimen name="small_margin">4dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_title">18sp</dimen>
 </resources>

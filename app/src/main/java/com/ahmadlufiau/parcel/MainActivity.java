@@ -1,5 +1,6 @@
 package com.ahmadlufiau.parcel;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity
 
     private static final String TAG_STATUS = "status";
     private static final String TAG_HOME = "beranda";
-    private static final String TAG_RIWAYAT_PEMBAYARAN = "Riwayat Pembayaran";
+    //private static final String TAG_RIWAYAT_PEMBAYARAN = "Riwayat Pembayaran";
     private static final String TAG_PENGIRIMAN = "Pengiriman";
     private static final String TAG_PROFIL = "Profil";
     public static String CURRENT_TAG = TAG_STATUS;
@@ -150,8 +151,9 @@ public class MainActivity extends AppCompatActivity
                 StatusFragment statusFragment = new StatusFragment();
                 return statusFragment;
             case 2:
-                RiwayatPembayaranFragment rpFragment = new RiwayatPembayaranFragment();
-                return rpFragment;
+                //RiwayatPembayaranFragment rpFragment = new RiwayatPembayaranFragment();
+                //return rpFragment;
+
             case 3:
                 PengirimanFragment pengirimanFragment = new PengirimanFragment();
                 return pengirimanFragment;
@@ -179,8 +181,8 @@ public class MainActivity extends AppCompatActivity
                 CURRENT_TAG = TAG_STATUS;
                 break;
             case R.id.nav_rp:
-                navItemIndex = 2;
-                CURRENT_TAG = TAG_RIWAYAT_PEMBAYARAN;
+                Intent moveIntent = new Intent(MainActivity.this, RiwayatPembayaranFragment.class);
+                startActivity(moveIntent);
                 break;
             case R.id.nav_pengiriman:
                 navItemIndex = 3;
