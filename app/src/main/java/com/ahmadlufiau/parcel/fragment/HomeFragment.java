@@ -1,4 +1,4 @@
-package com.ahmadlufiau.parcel;
+package com.ahmadlufiau.parcel.fragment;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.ahmadlufiau.parcel.R;
 
 import java.util.ArrayList;
 import java.util.List;

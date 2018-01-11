@@ -13,6 +13,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ahmadlufiau.parcel.fragment.HomeFragment;
+import com.ahmadlufiau.parcel.fragment.PengirimanFragment;
+import com.ahmadlufiau.parcel.fragment.ProfilFragment;
+import com.ahmadlufiau.parcel.fragment.RiwayatPembayaranFragment;
+import com.ahmadlufiau.parcel.fragment.StatusFragment;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
