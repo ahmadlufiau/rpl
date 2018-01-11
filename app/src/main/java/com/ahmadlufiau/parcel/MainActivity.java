@@ -17,7 +17,6 @@ import android.view.MenuItem;
 import com.ahmadlufiau.parcel.fragment.HomeFragment;
 import com.ahmadlufiau.parcel.fragment.PengirimanFragment;
 import com.ahmadlufiau.parcel.fragment.ProfilFragment;
-import com.ahmadlufiau.parcel.fragment.RiwayatPembayaranFragment;
 import com.ahmadlufiau.parcel.fragment.StatusFragment;
 
 import butterknife.BindView;
@@ -151,7 +150,7 @@ public class MainActivity extends AppCompatActivity
                 StatusFragment statusFragment = new StatusFragment();
                 return statusFragment;
             case 2:
-                //RiwayatPembayaranFragment rpFragment = new RiwayatPembayaranFragment();
+                //RiwayatPembayaranActivity rpFragment = new RiwayatPembayaranActivity();
                 //return rpFragment;
 
             case 3:
@@ -181,7 +180,7 @@ public class MainActivity extends AppCompatActivity
                 CURRENT_TAG = TAG_STATUS;
                 break;
             case R.id.nav_rp:
-                Intent moveIntent = new Intent(MainActivity.this, RiwayatPembayaranFragment.class);
+                Intent moveIntent = new Intent(MainActivity.this, RiwayatPembayaranActivity.class);
                 startActivity(moveIntent);
                 break;
             case R.id.nav_pengiriman:

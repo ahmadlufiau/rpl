@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragment.RiwayatPembayaranFragment"></activity>
+        <activity android:name=".RiwayatPembayaranActivity"></activity>
     </application>
 
 </manifest>
